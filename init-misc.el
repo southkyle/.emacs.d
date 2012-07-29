@@ -44,4 +44,8 @@
 (global-set-key (kbd "S-C-<down>") 'shrink-window)
 (global-set-key (kbd "S-C-<up>") 'enlarge-window)
 
+; Fix ansi-term mode the return key is not work
+(add-hook 'term-mode-hook
+  #'(lambda () (setq autopair-dont-activate t)))
+
 
