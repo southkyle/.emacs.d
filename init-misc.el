@@ -48,4 +48,4 @@
 (add-hook 'term-mode-hook
   #'(lambda () (setq autopair-dont-activate t)))
 
-
+(require 'sr-speedbar)

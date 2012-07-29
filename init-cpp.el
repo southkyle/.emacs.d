@@ -19,5 +19,9 @@
 (require 'yasnippet)
 (yas/global-mode 1)
 
+(add-to-list 'load-path "~/.emacs.d/site-lisp/misc");
+(require 'sr-speedbar)
+(global-set-key (kbd "s-s") 'sr-speedbar-toggle)
+
 (provide 'init-cpp)
 
